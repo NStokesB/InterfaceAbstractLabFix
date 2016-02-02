@@ -11,22 +11,48 @@ package lab1;
  */
 public class Startup {
     public static void main(String[] args){
-        ProgrammingCourse[] courses = {
-            new AdvancedJavaCourse(), new IntroJavaCourse(), new IntroToProgrammingCourse()};
         
-        for(ProgrammingCourse pc : courses){
-            pc.setCourseName(null);
-        }
+    AdvancedJavaCourse AJC = new AdvancedJavaCourse();
+    IntroJavaCourse IJC = new IntroJavaCourse();
+    IntroToProgrammingCourse ITPC = new IntroToProgrammingCourse();
+       
+        AJC.setCourseName("Advanded Java");
+        AJC.setCourseNumber("152-978");
+        AJC.setCredits(4.0);
+        AJC.setPrerequisites("Intro Java");
         
-         for(ProgrammingCourse pc : courses){
-            pc.setCourseNumber(null);
-        }
-          for(ProgrammingCourse pc : courses){
-            pc.setCredits(0.0);
-        }
-           for(ProgrammingCourse pc : courses){
-            pc.setPrerequisites(null);
-        }
-        }
+        AJC.getCourseName();
+        AJC.getCourseNumber();
+        AJC.getCredits();
+        AJC.getPrerequisites();
+
+        IJC.setCourseName("Intro Java");
+        IJC.setCourseNumber("152-475");
+        IJC.setCredits(5.0);
+        IJC.setPrerequisites("Intro to Programming"); 
+        
+        IJC.getCourseName();
+        IJC.getCourseNumber();
+        IJC.getCredits();
+        IJC.getPrerequisites();
+
+        ITPC.setCourseName("Intro to Programming");
+        ITPC.setCourseNumber("152-635");
+        ITPC.setCredits(4.0);
+        ITPC.setPrerequisites("No Prerequisites");
+            
+        ITPC.getCourseName();
+        ITPC.getCourseNumber();
+        ITPC.getCredits();
+        ITPC.getPrerequisites();
+            
+      
+            
+            
+        
+        
+       
+        
     }
+}
 
